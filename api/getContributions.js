@@ -57,7 +57,7 @@ router.get('/years/months/:username', async (req, res) => {
         totalContributions.years.push(yearlyContributions)
     });
 
-    res.send(JSON.parse(totalContributions))
+    res.send(totalContributions)
 })
 
 module.exports = router;
